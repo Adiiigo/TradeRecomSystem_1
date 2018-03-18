@@ -1,0 +1,68 @@
+
+ <div class="panel panel-default">
+  <!-- Default panel contents -->
+     <div class="panel-heading"><h2 style="font-size:15px; font-weight:bold">Nifty50 2016</h2></div>
+  <div class="panel-body" >
+  <div class="panel-marque">
+   <div class="marque-container">
+
+   <ul>
+       <li>TCS   <span class="percentchange positive">+0.27%</span></li>
+       <li>RELIANCE <span class="percentchange negative">-1.71%</span></li>
+       <li>HDFCBANK <span class="percentchange positive">19.36%</span> </li>
+       <li>ITC <span class="percentchange positive">+21.99%</span></li>
+       <li>ONGC <span class="percentchange positive">+35.76%</span></li>
+       <li>INFY<span class="percentchange negative">-16.76%</span></li>
+       <li>HDFC <span class="percentchange positive">+7.31%</span></li>
+       <li>SBIN <span class="percentchange positive">+37.22%</span> </li>
+        <li>MARUTI<span class="percentchange positive">+35.03%</span> </li>
+       <li>COALINDIA   <span class="percentchange negative">-1.67%</span></li>
+       <li>HINDULIVR<span class="percentchange positive">+6.17%</span></li>
+       <li>SUNPHARMA <span class="percentchange negative">-19.19%</span></li>
+       <li>ICICIBANK  <span class="percentchange positive">+15.17</span></li>
+       <li>TATAMOTARS  <span class="percentchange positive">+47.73%</span> </li>
+       <li>NTPC  <span class="percentchange positive">+26.12%</span></li>
+       <li>KOTAKBANK  <span class="percentchange positive">+8.13%</span></li>
+       <li>LT  <span class="percentchange positive">+25.99%</span></li>
+       <li>BHARTIARTL<span class="percentchange positive">+3.30%</span></li>
+       <li>HCLTECH <span class="percentchange positive">0.06%</span> </li>
+       <li>WIPRO<span class="percentchange negative">-11.83%</span></li>
+       <li>AXISBANK<span class="percentchange positive">+14.69%</span></li>
+       <li>POWERGRID<span class="percentchange positive">+46.67%</span></li>   RELIANCE
+       <li>BPCL <span class="percentchange positive">+48.41%</span></li>
+       <li>ULTRACEMCO<span class="percentchange positive">+31.57%</span> </li>
+       <li>ASIANPAINTS<span class="percentchange positive">+14.39%</span></li>
+       <li>BAJAJ-AUTO<span class="percentchange positive">+19.18%</span></li>
+       <li>M&M<span class="percentchange positive">+3.43%</span></li>
+       <li>INDUSINDBK<span class="percentchange positive">+36.12%</span></li>
+       <li>BOSCHLTD<span class="percentchange positive">+18.27%</span> </li>
+  </ul>
+         
+  </div>
+</div>
+</div>
+</div>
+
+<body>
+<div class="panel panel-default">
+<div class="panel-heading"><h2 style="font-weight:bold">MarketCap</h2></div>
+<div class="panel-body">
+    <p style="font-size:20px; font-weight:bold">Choose MarketCap for Stock Recommendation </p>
+   
+</div>
+ <div style="padding:15px">
+   <form class="form-inline">
+   <div class="form-group">
+   <select ng-model= "marketCap" class="form-control" style="height:34px; color:#555">
+      <option value="1">Small Cap</option>
+      <option value="2">Mid Cap </option>
+      <option value="3">Large Cap</option>
+   </select>
+   </div>
+   <button type="button" class="btn btn-success btn-mini" style="width:100px; margin-left:10px;" ng-click="load()"> Submit </button>
+    </form>    
+</div>   
+    
+<!--{{marketCap}}-->
+<div ui-view></div>
+    
